@@ -27,10 +27,10 @@ const eventlink = process.argv[2];
 if (!eventlink) throw new Error("no event id provided");
 // console.log(eventlink);
 
-const [eventid] = eventlink.match(/\$\w+/)
+const [eventid] = eventlink.match(/\$[\w-.]+/)
 // console.log("Event ID:", eventid)
 
-const [roomid] = eventlink.match(/\![\w.:]+/)
+const [roomid] = eventlink.match(/\![\w-.:]+/)
 // console.log("Room ID:", roomid)
 
 const event = await client.getEvent(roomid, eventid)
