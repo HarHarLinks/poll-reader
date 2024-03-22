@@ -36,5 +36,7 @@ It will then sort the results by the picked answer and print the list of users f
 ## To Do
 
 This is a POC:
-Notably, pagination of all the poll answers is missing.
-So if your poll has a lot of answers, we will only look at the latest 100 of them as returned by the server.
+
+- Notably, pagination of all the poll answers is missing.
+  So if your poll has a lot of answers, we will only look at the latest 100 of them as returned by the server.
+- E2E encryption while technically supported by the SDK is a bit of an issue for a "1-off command" like this.
